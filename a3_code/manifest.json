@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Blind Navigator (Magnifier)",
+  "version": "1.2",
+  "description": "Accessibility enhancer: screen reader, magnifier, high contrast, heading map, voice commands.",
+  "permissions": ["tts", "storage", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

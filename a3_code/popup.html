@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Blind Navigator</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 320px; padding: 12px; }
+    h2 { margin-top: 0; font-size: 18px; }
+    button, .control { width:100%; margin:6px 0; padding:8px; font-size:14px; }
+    .row { display:flex; gap:8px; }
+    label { font-size:13px; display:block; margin:6px 0 2px; }
+    input[type="range"] { width:100%; }
+    .small { font-size:12px; color:#555; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <h2>Blind Navigator</h2>
+
+  <button id="start" class="control">Start Accessibility Mode</button>
+  <button id="stop" class="control">Stop</button>
+
+  <button id="magnifierToggle" class="control">🔍 Magnifier</button>
+
+  <button id="toggleContrast" class="control">High Contrast</button>
+
+  <button id="headingMap" class="control">Open Heading Map</button>
+
+  <label>Voice Speed (rate)</label>
+  <input id="voiceRate" type="range" min="0.6" max="1.6" step="0.1" value="1">
+
+  <label>Voice Name (optional)</label>
+  <input id="voiceName" type="text" placeholder="e.g. Google हिन्दी" style="width:100%;padding:8px;margin-top:6px;">
+
+  <div class="small">Tip: Use keyboard H/L/B/N/P/R or say "headings", "links", "buttons", "next", "previous", "read".</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
