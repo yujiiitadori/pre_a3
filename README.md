@@ -8,8 +8,6 @@ It includes badges, screenshots placeholders, installation steps, usage guide, f
 
 ### *A Chrome extension that helps visually impaired users navigate any website with voice commands, smart reading, and high-visibility tools.*
 
-![Banner](./assets/banner.png) <!-- optional -->
-
 ---
 
 ## Installation
